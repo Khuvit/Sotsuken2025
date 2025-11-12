@@ -77,7 +77,7 @@ Where to go next (learning path)
 - Implement more instructions in `rv32i.v` gradually and add tests for each new instruction.
 - Add a small assembler or use the RISC‑V GNU toolchain to assemble test programs (requires converting ELF sections to `mem.bin` format).
 
-If you want me to
+Possible AI improvement
 -----------------
 - Pad the memory init files (silence `$readmemb` warnings), or
 - Initialize RAM to zeros at reset, or
