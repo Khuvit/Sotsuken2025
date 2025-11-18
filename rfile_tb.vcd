@@ -1,0 +1,128 @@
+$date
+	Mon Nov 17 17:42:19 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_rfile $end
+$var wire 32 ! rd2 [31:0] $end
+$var wire 32 " rd1 [31:0] $end
+$var parameter 32 # DATA_W $end
+$var parameter 32 $ REG_S $end
+$var parameter 32 % REG_W $end
+$var reg 5 & a1 [4:0] $end
+$var reg 5 ' a2 [4:0] $end
+$var reg 5 ( a3 [4:0] $end
+$var reg 1 ) clk $end
+$var reg 32 * wd [31:0] $end
+$var reg 1 + we $end
+$scope module uut $end
+$var wire 5 , a1 [4:0] $end
+$var wire 5 - a2 [4:0] $end
+$var wire 5 . a3 [4:0] $end
+$var wire 1 ) clk $end
+$var wire 32 / wd [31:0] $end
+$var wire 1 + we $end
+$var wire 32 0 x1 [31:0] $end
+$var wire 32 1 rd2 [31:0] $end
+$var wire 32 2 rd1 [31:0] $end
+$var parameter 32 3 DATA_W $end
+$var parameter 32 4 REG_S $end
+$var parameter 32 5 REG_W $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 5
+b100000 4
+b100000 3
+b101 %
+b100000 $
+b100000 #
+$end
+#0
+$dumpvars
+b0 2
+b0 1
+bx 0
+b0 /
+b0 .
+b0 -
+b0 ,
+0+
+b0 *
+0)
+b0 (
+b0 '
+b0 &
+b0 "
+b0 !
+$end
+#5000
+1)
+#10000
+0)
+#12000
+b101 *
+b101 /
+b1 (
+b1 .
+1+
+#15000
+b101 0
+1)
+#20000
+0)
+#22000
+b101 "
+b101 2
+b1 &
+b1 ,
+0+
+#24000
+b1111011 *
+b1111011 /
+b1010 (
+b1010 .
+1+
+#25000
+1)
+#30000
+0)
+#34000
+b1111011 "
+b1111011 2
+b1010 &
+b1010 ,
+0+
+#35000
+1)
+#36000
+b1111100111 *
+b1111100111 /
+b0 (
+b0 .
+1+
+#40000
+0)
+#45000
+1)
+#46000
+b0 "
+b0 2
+b0 &
+b0 ,
+0+
+#50000
+0)
+#55000
+1)
+#60000
+0)
+#65000
+1)
+#68000

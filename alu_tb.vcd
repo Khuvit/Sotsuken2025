@@ -1,0 +1,101 @@
+$date
+	Mon Nov 17 18:00:01 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_alu $end
+$var wire 32 ! y [31:0] $end
+$var parameter 32 " DATA_W $end
+$var parameter 32 # OP_W $end
+$var parameter 32 $ SHAMT_W $end
+$var reg 32 % a [31:0] $end
+$var reg 32 & b [31:0] $end
+$var reg 1 ' ext $end
+$var reg 3 ( s [2:0] $end
+$scope module uut $end
+$var wire 32 ) a [31:0] $end
+$var wire 32 * b [31:0] $end
+$var wire 1 ' ext $end
+$var wire 3 + s [2:0] $end
+$var wire 5 , shamt [4:0] $end
+$var parameter 32 - DATA_W $end
+$var parameter 32 . OP $end
+$var parameter 32 / SHAMT_W $end
+$var reg 32 0 y [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 /
+b11 .
+b100000 -
+b101 $
+b11 #
+b100000 "
+$end
+#0
+$dumpvars
+b0 0
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+0'
+b0 &
+b0 %
+b0 !
+$end
+#5000
+b11 ,
+b10 !
+b10 0
+b111 (
+b111 +
+b11 &
+b11 *
+b110 %
+b110 )
+#10000
+b1 ,
+b11 !
+b11 0
+b110 (
+b110 +
+b1 &
+b1 *
+b10 %
+b10 )
+#15000
+b101 !
+b101 0
+b100 (
+b100 +
+b100 %
+b100 )
+#20000
+b11 ,
+b1000 !
+b1000 0
+b1 (
+b1 +
+b11 &
+b11 *
+b1 %
+b1 )
+#25000
+b10 ,
+b100 !
+b100 0
+b101 (
+b101 +
+b10 &
+b10 *
+b10000 %
+b10000 )
+#40000

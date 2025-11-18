@@ -16,11 +16,13 @@ module rfile #(
     assign x1 = rf[1];
     // -------------------------
 
-    assign rd1 = |a1 == 0 ? 0 : rf[a1];
-    assign rd2 = |a2 == 0 ? 0 : rf[a2];
+    // x0 は常に 0、それ以外はレジスタ値11-17に更新RISC-V的に正しいらしい。
+    assign rd1 = (a1 == 0) ? {DATA_W{1'b0}} : rf[a1];
+    assign rd2 = (a2 == 0) ? {DATA_W{1'b0}} : rf[a2];
 
     always @(posedge clk) begin
-        if (we) begin
+        // x0 には書き込まない
+        if (we && (a3 != 0)) begin
             rf[a3] <= wd;
         end
     end
